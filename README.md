@@ -1,6 +1,6 @@
 # Hana Furu
 
-Hana Furu is a quiet daily flower oracle for small days. Open the app, choose a mood, and let one symbolic flower fall with a poetic message, short interpretation, small action, lucky item, and gentle warning.
+Hana Furu is a quiet bilingual daily flower oracle for small days. Open the app, choose a mood, and let one symbolic flower fall with a poetic message, short interpretation, small action, lucky item, and gentle warning. English appears first, with Japanese shown below as a softer subtitle.
 
 ## Repository
 
@@ -22,7 +22,9 @@ There is no React, Vue, TypeScript, Tailwind, build step, backend, login, databa
 
 ## Editing the flower oracle entries
 
-The flower oracle entries live in the `flowerOracles` array near the top of `script.js`. Each entry has these fields:
+The flower oracle entries live in the `flowerOracles` array near the top of `script.js`. Each entry has English fields and matching Japanese `*Ja` fields. English appears first in the app, and Japanese appears below it. Edit the English fields for English copy and the `*Ja` fields for Japanese copy.
+
+English fields:
 
 - `flowerName`
 - `omenType`
@@ -32,7 +34,17 @@ The flower oracle entries live in the `flowerOracles` array near the top of `scr
 - `luckyItem`
 - `warning`
 
-Add, remove, or rewrite entries there to change the oracle.
+Japanese fields:
+
+- `flowerNameJa`
+- `omenTypeJa`
+- `messageJa`
+- `meaningJa`
+- `smallActionJa`
+- `luckyItemJa`
+- `warningJa`
+
+Add, remove, or rewrite entries there to change the oracle. Keep each English field paired with its Japanese field so the app remains bilingual.
 
 ## Saved history
 
