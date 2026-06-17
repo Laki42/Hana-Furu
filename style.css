@@ -172,3 +172,61 @@ button:active { transform: translateY(1px); }
   *, *::before, *::after { scroll-behavior: auto !important; }
   .petals span { animation: none; display: none; }
 }
+
+.ja-title {
+  margin: 4px auto 0;
+  color: rgba(255, 250, 240, 0.82);
+  font-size: clamp(1.15rem, 5vw, 1.8rem);
+  letter-spacing: 0.32em;
+}
+
+.ja-text,
+.ja-heading,
+.ja-label,
+.ja-flower,
+.ja-message,
+.button-ja {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", Georgia, serif;
+  font-weight: 400;
+}
+
+.ja-text,
+.ja-heading,
+.ja-label,
+.button-ja {
+  color: rgba(116, 106, 113, 0.82);
+  font-size: 0.88em;
+  line-height: 1.7;
+}
+
+.ja-heading {
+  display: inline-block;
+  margin-top: 4px;
+  color: rgba(68, 44, 52, 0.72);
+  font-size: 0.72em;
+}
+
+.ja-flower {
+  color: rgba(84, 50, 65, 0.76);
+  font-size: 0.48em;
+  letter-spacing: 0.16em;
+}
+
+.ja-message {
+  display: inline-block;
+  margin-top: 8px;
+  color: rgba(58, 41, 49, 0.74);
+  font-size: 0.86em;
+  line-height: 1.75;
+}
+
+.ja-label {
+  color: rgba(157, 79, 85, 0.72);
+  font-size: 0.9em;
+}
+
+.button-ja {
+  color: inherit;
+  opacity: 0.76;
+  font-size: 0.82em;
+}
