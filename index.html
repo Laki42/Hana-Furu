@@ -14,31 +14,32 @@
 
   <main class="page-shell">
     <header class="site-header">
-      <p class="eyebrow">花降る</p>
+      <p class="eyebrow">FLOWER OMIKUJI</p>
       <h1>Hana Furu</h1>
-      <p>A quiet flower oracle for small days.</p>
+      <p class="ja-title">花降る</p>
+      <p>A quiet flower oracle for small days.<br><span class="ja-text">小さな日のための、静かな花のおみくじ。</span></p>
     </header>
 
     <section class="oracle-card" aria-labelledby="oracle-title">
       <div class="moon-mark" aria-hidden="true"></div>
-      <h2 id="oracle-title">Today’s flower has fallen.</h2>
-      <p class="intro">Choose the mood you brought to the garden, then let one flower drift down.</p>
+      <h2 id="oracle-title">Today’s flower has fallen.<br><span class="ja-heading">今日の花が降りました。</span></h2>
+      <p class="intro">Choose the mood you brought to the garden, then let one flower drift down.<br><span class="ja-text">庭へ持ってきた気分を選び、一輪の花が静かに降りてくるのを待ちます。</span></p>
 
       <form class="mood-picker" aria-label="Choose your mood">
-        <label for="moodSelect">Mood</label>
+        <label for="moodSelect">Mood<br><span class="ja-text">気分</span></label>
         <select id="moodSelect" name="mood">
-          <option value="Quiet">Quiet</option>
-          <option value="Tired">Tired</option>
-          <option value="Restless">Restless</option>
-          <option value="Hopeful">Hopeful</option>
-          <option value="Lonely">Lonely</option>
-          <option value="Annoyed">Annoyed</option>
+          <option value="Quiet">Quiet / 静か</option>
+          <option value="Tired">Tired / 疲れている</option>
+          <option value="Restless">Restless / 落ち着かない</option>
+          <option value="Hopeful">Hopeful / 希望がある</option>
+          <option value="Lonely">Lonely / さみしい</option>
+          <option value="Annoyed">Annoyed / いらいら</option>
         </select>
       </form>
 
       <div class="actions" aria-label="Oracle actions">
-        <button id="drawButton" class="primary-button" type="button">Let a flower fall</button>
-        <button id="drawAgainButton" class="secondary-button" type="button">Draw again</button>
+        <button id="drawButton" class="primary-button" type="button">Let a flower fall<br><span class="button-ja">花を降らせる</span></button>
+        <button id="drawAgainButton" class="secondary-button" type="button">Draw again<br><span class="button-ja">もう一度引く</span></button>
       </div>
 
       <article id="resultCard" class="result-card hidden" aria-live="polite"></article>
@@ -46,8 +47,8 @@
 
     <section class="history-card" aria-labelledby="history-title">
       <div class="history-heading">
-        <h2 id="history-title">Past Flowers</h2>
-        <button id="clearHistoryButton" class="text-button" type="button">Clear history</button>
+        <h2 id="history-title">Past Flowers<br><span class="ja-heading">これまでの花</span></h2>
+        <button id="clearHistoryButton" class="text-button" type="button">Clear history<br><span class="button-ja">履歴を消す</span></button>
       </div>
       <ul id="historyList" class="history-list"></ul>
     </section>
@@ -56,3 +57,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
